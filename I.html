@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8"/>
+    <title>I期</title>
+    <script src="script/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<!--主表单-->
+<form id="form" autocomplete="off" onsubmit="return false">
+    <!--性别-->
+    <div>
+        1. 请选择性别
+    </div>
+
+    <p></p>
+
+    <fieldset>
+        <div>
+            <input type="radio" name="sex" id="man" value="26.54548" checked>
+            <label for="man">男</label>
+        </div>
+        <div>
+            <input type="radio" name="sex" id="women" value="0">
+            <label for="women">女</label>
+        </div>
+    </fieldset>
+    <p></p>
+
+    <!--年龄-->
+    <div>
+        2. 请选择年龄
+    </div>
+
+    <p></p>
+
+    <fieldset>
+        <div>
+            <input type="radio" name="age" id="1" value="0" checked>
+            <label for="1"><60</label>
+        </div>
+        <div>
+            <input type="radio" name="sex" id="2" value="31.40455">
+            <label for="2">60-69</label>
+        </div>
+        <div>
+            <input type="radio" name="sex" id="3" value="65.27106">
+            <label for="3">>=70</label>
+        </div>
+    </fieldset>
+    <p></p>
+
+
+    <!--组织学-->
+    <div>
+        3. 请选择组织学
+    </div>
+
+    <p></p>
+    <fieldset>
+        <div>
+            <input type="radio" name="zz" id="z1" value="26.33914" checked>
+            <label for="z1">腺癌</label>
+        </div>
+        <div>
+            <input type="radio" name="zz" id="z2" value="0">
+            <label for="z2">原位腺癌或微浸润腺癌</label>
+        </div>
+        <div>
+            <input type="radio" name="zz" id="z3" value="27.33178">
+            <label for="z3">鳞癌</label>
+        </div>
+        <div>
+            <input type="radio" name="zz" id="z4" value="33.2276">
+            <label for="z3">其他</label>
+        </div>
+    </fieldset>
+
+    <!--组织学-->
+    <div>
+        4. 请选择分级
+    </div>
+
+    <p></p>
+    <fieldset>
+        <div>
+            <input type="radio" name="level" id="l1" value="0" checked>
+            <label for="l1">I</label>
+        </div>
+        <div>
+            <input type="radio" name="level" id="l2" value="71.71349">
+            <label for="l2">II</label>
+        </div>
+        <div>
+            <input type="radio" name="level" id="l3" value="100">
+            <label for="l3">III-IV</label>
+        </div>
+    </fieldset>
+
+    <!--淋巴结采样数目-->
+    <div>
+        5. 请选择淋巴结采样数目
+    </div>
+
+    <p></p>
+    <fieldset>
+        <div>
+            <input type="radio" name="lb" id="lb1" value="37.03084" checked>
+            <label for="lb1"><16</label>
+        </div>
+        <div>
+            <input type="radio" name="lb" id="lb2" value="0">
+            <label for="lb2"><=16</label>
+        </div>
+    </fieldset>
+
+    <div>
+        6. TNM分期
+    </div>
+
+    <p></p>
+    <fieldset>
+        <div>
+            <input type="radio" name="TNM" id="TNM1" value="0" checked>
+            <label for="TNM1">IA1</label>
+        </div>
+        <div>
+            <input type="radio" name="TNM" id="TNM2" value="30.11456">
+            <label for="TNM2">IA2</label>
+        </div>
+        <div>
+            <input type="radio" name="TNM" id="TNM3" value="65.81319">
+            <label for="TNM3">IA3</label>
+        </div>
+        <div>
+            <input type="radio" name="TNM" id="TNM4" value="70.52046">
+            <label for="TNM4">IB</label>
+        </div>
+    </fieldset>
+
+    <!--治疗方案-->
+    <div>
+        7. 治疗方案
+    </div>
+
+    <p></p>
+    <fieldset>
+        <div>
+            <input type="radio" name="zl" id="zl1" value="0" checked>
+            <label for="zl1">肺叶切除术</label>
+        </div>
+        <div>
+            <input type="radio" name="zl" id="zl2" value="38.54706">
+            <label for="zl2">肺段切除术</label>
+        </div>
+        <div>
+            <input type="radio" name="zl" id="zl3" value="50.13435">
+            <label for="zl3">楔形切除术</label>
+        </div>
+        <div>
+            <input type="radio" name="zl" id="zl4" value="59.38025">
+            <label for="zl4">手术+放疗和/或化疗</label>
+        </div>
+    </fieldset>
+    <p></p>
+
+    <!--8.已经存活的时间x年-->
+    <div>
+        8. 已经存活的时间x年
+    </div>
+
+    <p></p>
+    <fieldset>
+        <div>
+            <input type="radio" name="x" id="live0" value="0" checked>
+            <label for="live0">0</label>
+        </div>
+        <div>
+            <input type="radio" name="x" id="live1" value="1">
+            <label for="live1">1</label>
+        </div>
+        <div>
+            <input type="radio" name="x" id="live2" value="2">
+            <label for="live2">2</label>
+        </div>
+        <div>
+            <input type="radio" name="x" id="live3" value="3">
+            <label for="live3">3</label>
+        </div>
+        <div>
+            <input type="radio" name="x" id="live4" value="4">
+            <label for="live4">4</label>
+        </div>
+        <div>
+            <input type="radio" name="x" id="live5" value="5">
+            <label for="live5">5</label>
+        </div>
+    </fieldset>
+
+    <!--
+    1.性别：男or女
+    2.年龄：<60,60-69,>=70
+    3.组织学：腺癌, 原位腺癌或微浸润腺癌, 鳞癌, 其他
+    4.分级：I,  II, III-IV
+    5.淋巴结采样数目：<16, >=16
+    6.TNM分期：IA1, IA2, IA3, IB
+    7.治疗方案：肺叶切除术，肺段切除术，楔形切除术，手术+放疗和/或化疗
+    8.已经存活的时间x年：0，1，2，3，4，5
+    9.期望的额外存活时间y年：1，2，3，4，5
+
+    1.性别=“女”：0；性别=“男“：26.54548
+    2.年龄=“<60”：0；年龄= “60-69”：31.40455；年龄= “ >=70”：65.27106
+    3.组织学=“腺癌”：26.33914；组织学=“原位腺癌或微浸润腺癌”：0；组织学=“鳞癌”： 27.33178；组织学=“其他”：33.2276
+    4.分级=“I”：0；分级=“II”：71.71349；分级=“III-IV”：100
+    5.淋巴结采样数目=“ <16”：37.03084；淋巴结采样数目=“ >=16”：0
+    6. TNM分期=“ IA1”：0；TNM分期=“ IA2”： 30.11456； TNM分期=“IA3”： 65.81319； TNM分期=“IB”： 70.52046
+    7.治疗方案=“肺叶切除术”：0；治疗方案=“肺段切除术”： 38.54706；治疗方案=“楔形切除术”： 50.13435；治疗方案=“手术+放疗和/或化疗”： 59.38025
+
+    -->
+
+    <!--9.期望的额外存活时间y年-->
+    <div>
+        9.期望的额外存活时间y年
+    </div>
+
+    <p></p>
+    <fieldset>
+        <div>
+            <input type="radio" name="y" id="elive1" value="1" checked>
+            <label for="elive1">1</label>
+        </div>
+        <div>
+            <input type="radio" name="y" id="elive2" value="2">
+            <label for="elive2">2</label>
+        </div>
+        <div>
+            <input type="radio" name="y" id="elive3" value="3">
+            <label for="elive3">3</label>
+        </div>
+        <div>
+            <input type="radio" name="y" id="elive4" value="4">
+            <label for="elive4">4</label>
+        </div>
+        <div>
+            <input type="radio" name="y" id="elive5" value="5">
+            <label for="elive5">5</label>
+        </div>
+    </fieldset>
+
+    <!--提交-->
+    <div class="form-group row" id="submit">
+        <div>
+            <input type="submit" name="Submit" value="计算" class="submit_button" id="calc_pred_button">
+        </div>
+    </div>
+</form>
+
+<p></p>
+
+<div>
+    <p>生存率：</p>
+    <label id="result"></label>
+</div>
+
+<script>
+    $("#form").submit(function (e) {
+        e.preventDefault();
+        var data = $("form").serializeArray();
+        console.log(data);
+
+        // points
+        var points = 0;
+        var x = 0;
+        var y = 0;
+        data.forEach(function (item) {
+            if (item['name'] === 'x') {
+                x = parseInt(item['value']);
+                console.log('x=' + x);
+                // 不算分
+                return;
+            }
+
+            if (item['name'] === 'y') {
+                y = parseInt(item['value']);
+                console.log('y=' + y);
+                // 不算分
+                return;
+            }
+
+            points += parseFloat(item['value']);
+        });
+        console.log("points=" + points);
+
+        // z
+        var z = x + y;
+
+        // ES
+        var ES = 0;
+        switch (z) {
+            case 10:
+                ES = -0.000000001 * (points ^ 3) + -0.00000441 * (points ^ 2) + -0.000002073 * points + 0.958320499;
+                break;
+            case 9:
+                ES = -0.000000003 * (points ^ 3) + -0.000003604 * (points ^ 2) + 0.000005303 * points + 0.959999594;
+                break;
+            case 8:
+                ES = -0.000000004 * (points ^ 3) + -0.000003027 * (points ^ 2) + -0.000007476 * points + 0.961672203;
+                break;
+            case 7:
+                ES = -0.000000005 * (points ^ 3) + -0.000002458 * (points ^ 2) + -0.000024115 * points + 0.963725068;
+                break;
+            case 6:
+                ES = -0.000000006 * (points ^ 3) + -0.000001142 * (points ^ 2) + -0.000159149 * points + 0.973469663;
+                break;
+            case 5:
+                ES = -0.000000007 * (points ^ 3) + -0.000000447 * (points ^ 2) + -0.000185244 * points + 0.976988247;
+                break;
+            case 4:
+                ES = -0.000000008 * (points ^ 3) + 0.00000049 * (points ^ 2) + -0.000252302 * points + 0.983492271;
+                break;
+            case 3:
+                ES = -0.000000008 * (points ^ 3) + 0.00000143 * (points ^ 2) + -0.000349111 * points + 0.993556078;
+                break;
+            case 2:
+                ES = -0.000000007 * (points ^ 3) + 0.000001481 * (points ^ 2) + -0.000272939 * points + 0.994564172;
+                break;
+            case 1:
+                ES = -0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809;
+                break;
+            default:
+                break;
+        }
+        console.log('ES=' + ES);
+        if (ES > 1) {
+            ES = 1;
+        }
+
+        // AS
+        var AS = 0;
+        switch (x) {
+            case 1:
+                AS = -0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809;
+                break;
+            case 2:
+                AS = -0.000000007 * (points ^ 3) + 0.000001481 * (points ^ 2) + -0.000272939 * points + 0.994564172;
+                break;
+            case 3:
+                AS = -0.000000008 * (points ^ 3) + 0.00000143 * (points ^ 2) + -0.000349111 * points + 0.993556078;
+                break;
+            case 4:
+                AS = -0.000000008 * (points ^ 3) + 0.00000049 * (points ^ 2) + -0.000252302 * points + 0.983492271;
+                break;
+            case 5:
+                AS = -0.000000007 * (points ^ 3) + -0.000000447 * (points ^ 2) + -0.000185244 * points + 0.976988247;
+                break;
+            default:
+                break;
+        }
+        console.log("AS=" + AS);
+        if (AS > 1) {
+            AS = 1;
+        }
+
+        // 生存率CS
+        var CS = ES / AS;
+        console.log("CS=" + CS);
+
+        $("#result").text(CS);
+    })
+</script>
+</body>
+</html>
