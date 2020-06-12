@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>I期</title>
     <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/math.min.js"></script>
 </head>
 <body>
 <!--主表单-->
@@ -110,7 +111,7 @@
         </div>
         <div>
             <input type="radio" name="lb" id="lb2" value="0">
-            <label for="lb2"><=16</label>
+            <label for="lb2">>=16</label>
         </div>
     </fieldset>
 
@@ -263,6 +264,11 @@
 </div>
 
 <script>
+    function calculate(formula, points) {
+        var finalFormula = formula.split('points').join(points);
+        return math.evaluate(finalFormula);
+    }
+
     $("#form").submit(function (e) {
         e.preventDefault();
         var data = $("form").serializeArray();
@@ -298,34 +304,36 @@
         var ES = 0;
         switch (z) {
             case 10:
-                ES = -0.000000001 * (points ^ 3) + -0.00000441 * (points ^ 2) + -0.000002073 * points + 0.958320499;
+                ES = calculate('-0.000000001 * (points ^ 3) + -0.00000441 * (points ^ 2) + -0.000002073 * points + 0.958320499', points);
                 break;
             case 9:
-                ES = -0.000000003 * (points ^ 3) + -0.000003604 * (points ^ 2) + 0.000005303 * points + 0.959999594;
+                ES = calculate('-0.000000003 * (points ^ 3) + -0.000003604 * (points ^ 2) + 0.000005303 * points + 0.959999594', points);
                 break;
             case 8:
-                ES = -0.000000004 * (points ^ 3) + -0.000003027 * (points ^ 2) + -0.000007476 * points + 0.961672203;
+                ES = calculate('-0.000000004 * (points ^ 3) + -0.000003027 * (points ^ 2) + -0.000007476 * points + 0.961672203', points);
                 break;
             case 7:
-                ES = -0.000000005 * (points ^ 3) + -0.000002458 * (points ^ 2) + -0.000024115 * points + 0.963725068;
+                ES = calculate('-0.000000005 * (points ^ 3) + -0.000002458 * (points ^ 2) + -0.000024115 * points + 0.963725068', points);
                 break;
             case 6:
-                ES = -0.000000006 * (points ^ 3) + -0.000001142 * (points ^ 2) + -0.000159149 * points + 0.973469663;
+                ES = calculate('-0.000000006 * (points ^ 3) + -0.000001142 * (points ^ 2) + -0.000159149 * points + 0.973469663', points);
                 break;
             case 5:
-                ES = -0.000000007 * (points ^ 3) + -0.000000447 * (points ^ 2) + -0.000185244 * points + 0.976988247;
+                ES = calculate('-0.000000007 * (points ^ 3) + -0.000000447 * (points ^ 2) + -0.000185244 * points + 0.976988247', points);
                 break;
             case 4:
-                ES = -0.000000008 * (points ^ 3) + 0.00000049 * (points ^ 2) + -0.000252302 * points + 0.983492271;
+                ES = calculate('-0.000000008 * (points ^ 3) + 0.00000049 * (points ^ 2) + -0.000252302 * points + 0.983492271', points);
+                console.log("1", ES);
                 break;
             case 3:
-                ES = -0.000000008 * (points ^ 3) + 0.00000143 * (points ^ 2) + -0.000349111 * points + 0.993556078;
+                ES = calculate('-0.000000008 * (points ^ 3) + 0.00000143 * (points ^ 2) + -0.000349111 * points + 0.993556078', points);
                 break;
             case 2:
-                ES = -0.000000007 * (points ^ 3) + 0.000001481 * (points ^ 2) + -0.000272939 * points + 0.994564172;
+                ES = calculate('-0.000000007 * (points ^ 3) + 0.000001481 * (points ^ 2) + -0.000272939 * points + 0.994564172', points);
                 break;
             case 1:
-                ES = -0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809;
+                ES = calculate('-0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809', points);
+                console.log("1", ES);
                 break;
             default:
                 break;
@@ -339,19 +347,19 @@
         var AS = 0;
         switch (x) {
             case 1:
-                AS = -0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809;
+                AS = calculate('-0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809', points);
                 break;
             case 2:
-                AS = -0.000000007 * (points ^ 3) + 0.000001481 * (points ^ 2) + -0.000272939 * points + 0.994564172;
+                AS = calculate('-0.000000007 * (points ^ 3) + 0.000001481 * (points ^ 2) + -0.000272939 * points + 0.994564172', points);
                 break;
             case 3:
-                AS = -0.000000008 * (points ^ 3) + 0.00000143 * (points ^ 2) + -0.000349111 * points + 0.993556078;
+                AS = calculate('-0.000000008 * (points ^ 3) + 0.00000143 * (points ^ 2) + -0.000349111 * points + 0.993556078', points);
                 break;
             case 4:
-                AS = -0.000000008 * (points ^ 3) + 0.00000049 * (points ^ 2) + -0.000252302 * points + 0.983492271;
+                AS = calculate('-0.000000008 * (points ^ 3) + 0.00000049 * (points ^ 2) + -0.000252302 * points + 0.983492271', points);
                 break;
             case 5:
-                AS = -0.000000007 * (points ^ 3) + -0.000000447 * (points ^ 2) + -0.000185244 * points + 0.976988247;
+                AS = calculate('-0.000000007 * (points ^ 3) + -0.000000447 * (points ^ 2) + -0.000185244 * points + 0.976988247', points);
                 break;
             default:
                 break;
