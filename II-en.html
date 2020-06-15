@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="utf-8"/>
-    <title>I期</title>
+    <title>II-IIIA stage</title>
     <script src="script/jquery-3.5.1.min.js"></script>
     <script src="script/math.min.js"></script>
 </head>
@@ -11,22 +11,22 @@
 <form id="form" autocomplete="off" onsubmit="return false">
     <!--性别-->
     <div>
-        1. 请选择性别
+        1. sex
     </div>
 
     <p></p>
 
     <fieldset>
-        <input type="radio" name="sex" id="man" value="26.54548" checked>
-        <label for="man">男</label>
+        <input type="radio" name="sex" id="man" value="28.123" checked>
+        <label for="man">male</label>
         <input type="radio" name="sex" id="women" value="0">
-        <label for="women">女</label>
+        <label for="women">female</label>
     </fieldset>
     <p></p>
 
     <!--年龄-->
     <div>
-        2. 请选择年龄
+        2. age (years)
     </div>
 
     <p></p>
@@ -34,9 +34,9 @@
     <fieldset>
         <input type="radio" name="age" id="1" value="0" checked>
         <label for="1"><60</label>
-        <input type="radio" name="age" id="2" value="31.40455">
+        <input type="radio" name="age" id="2" value="42.31306">
         <label for="2">60-69</label>
-        <input type="radio" name="age" id="3" value="65.27106">
+        <input type="radio" name="age" id="3" value="65.39539">
         <label for="3">>=70</label>
     </fieldset>
     <p></p>
@@ -44,86 +44,95 @@
 
     <!--组织学-->
     <div>
-        3. 请选择组织学
+        3. histologic type
     </div>
 
     <p></p>
     <fieldset>
-        <input type="radio" name="zz" id="z1" value="26.33914" checked>
-        <label for="z1">腺癌</label>
+        <input type="radio" name="zz" id="z1" value="26.25465" checked>
+        <label for="z1">adenocarcinoma</label>
         <input type="radio" name="zz" id="z2" value="0">
-        <label for="z2">原位腺癌或微浸润腺癌</label>
-        <input type="radio" name="zz" id="z3" value="27.33178">
-        <label for="z3">鳞癌</label>
-        <input type="radio" name="zz" id="z4" value="33.2276">
-        <label for="z3">其他</label>
+        <label for="z2">squamous cell carcinoma</label>
+        <input type="radio" name="zz" id="z3" value="40.86235">
+        <label for="z3">other</label>
     </fieldset>
 
     <!--组织学-->
     <div>
-        4. 请选择分级
+        4. grade
     </div>
 
     <p></p>
     <fieldset>
         <input type="radio" name="level" id="l1" value="0" checked>
         <label for="l1">I</label>
-        <input type="radio" name="level" id="l2" value="71.71349">
+        <input type="radio" name="level" id="l2" value="45.30135">
         <label for="l2">II</label>
-        <input type="radio" name="level" id="l3" value="100">
+        <input type="radio" name="level" id="l3" value="68.51703">
         <label for="l3">III-IV</label>
     </fieldset>
 
-    <!--淋巴结采样数目-->
+    <!--部位-->
     <div>
-        5. 请选择淋巴结采样数目
+        5. tumor site
     </div>
 
     <p></p>
     <fieldset>
-        <input type="radio" name="lb" id="lb1" value="37.03084" checked>
+        <input type="radio" name="site" id="site1" value="8.800911" checked>
+        <label for="site1">upper lobe</label>
+        <input type="radio" name="site" id="site2" value="0">
+        <label for="site2">middle lobe</label>
+        <input type="radio" name="site" id="site3" value="36.079607">
+        <label for="l3">lower lobe</label>
+    </fieldset>
+
+    <!--淋巴结采样数目-->
+    <div>
+        6. number of examined lymph nodes
+    </div>
+
+    <p></p>
+    <fieldset>
+        <input type="radio" name="lb" id="lb1" value="25.11325" checked>
         <label for="lb1"><16</label>
         <input type="radio" name="lb" id="lb2" value="0">
         <label for="lb2">>=16</label>
     </fieldset>
 
     <div>
-        6. TNM分期
+        6. TNM stage
     </div>
 
     <p></p>
     <fieldset>
         <input type="radio" name="TNM" id="TNM1" value="0" checked>
-        <label for="TNM1">IA1</label>
-        <input type="radio" name="TNM" id="TNM2" value="30.11456">
-        <label for="TNM2">IA2</label>
-        <input type="radio" name="TNM" id="TNM3" value="65.81319">
-        <label for="TNM3">IA3</label>
-        <input type="radio" name="TNM" id="TNM4" value="70.52046">
-        <label for="TNM4">IB</label>
+        <label for="TNM1">IIA</label>
+        <input type="radio" name="TNM" id="TNM2" value="55.82092">
+        <label for="TNM2">IIB</label>
+        <input type="radio" name="TNM" id="TNM3" value="100">
+        <label for="TNM3">IIIA</label>
     </fieldset>
 
     <!--治疗方案-->
     <div>
-        7. 治疗方案
+        7. treatment strategy
     </div>
 
     <p></p>
     <fieldset>
         <input type="radio" name="zl" id="zl1" value="0" checked>
-        <label for="zl1">肺叶切除术</label>
-        <input type="radio" name="zl" id="zl2" value="38.54706">
-        <label for="zl2">肺段切除术</label>
-        <input type="radio" name="zl" id="zl3" value="50.13435">
-        <label for="zl3">楔形切除术</label>
-        <input type="radio" name="zl" id="zl4" value="59.38025">
-        <label for="zl4">手术+放疗和/或化疗</label>
+        <label for="zl1">lobectomy+chemotherapy</label>
+        <input type="radio" name="zl" id="zl2" value="50.17425">
+        <label for="zl2">sublobar resection+chemotherapy</label>
+        <input type="radio" name="zl" id="zl3" value="51.46833">
+        <label for="zl3">other</label>
     </fieldset>
     <p></p>
 
     <!--8.已经存活的时间x年-->
     <div>
-        8. 已经存活的时间x年
+        8. patient has survived x years
     </div>
 
     <p></p>
@@ -165,7 +174,7 @@
 
     <!--9.期望的额外存活时间y年-->
     <div>
-        9.期望的额外存活时间y年
+        9. patient expects to survive for another y years
     </div>
 
     <p></p>
@@ -195,7 +204,7 @@
 <p></p>
 
 <div>
-    <p>生存率：</p>
+    <p>y-year conditional survival given that the patient has survived x years:</p>
     <label id="result"></label>
 </div>
 
@@ -240,35 +249,35 @@
         var ES = 0;
         switch (z) {
             case 10:
-                ES = calculate('-0.000000001 * (points ^ 3) + -0.00000441 * (points ^ 2) + -0.000002073 * points + 0.958320499', points);
+                ES = calculate('1.2e-08 * (points ^3) + -9.919e-06 * (points ^2) + 0.000315701 * points + 0.822230384', points);
                 break;
             case 9:
-                ES = calculate('-0.000000003 * (points ^ 3) + -0.000003604 * (points ^ 2) + 0.000005303 * points + 0.959999594', points);
+                ES = calculate('1.1e-08 * (points ^3) + -9.496e-06 * (points ^2) + 0.000293242 * points + 0.830306067', points);
                 break;
             case 8:
-                ES = calculate('-0.000000004 * (points ^ 3) + -0.000003027 * (points ^ 2) + -0.000007476 * points + 0.961672203', points);
+                ES = calculate('1.1e-08 * (points ^3) + -9.486e-06 * (points ^2) + 0.000376139 * points + 0.830403902', points);
                 break;
             case 7:
-                ES = calculate('-0.000000005 * (points ^ 3) + -0.000002458 * (points ^ 2) + -0.000024115 * points + 0.963725068', points);
+                ES = calculate('1e-08 * (points ^3) + -9.084e-06 * (points ^2) + 0.000380323 * points + 0.838055915', points);
                 break;
             case 6:
-                ES = calculate('-0.000000006 * (points ^ 3) + -0.000001142 * (points ^ 2) + -0.000159149 * points + 0.973469663', points);
+                ES = calculate('9e-09 * (points ^3) + -8.486e-06 * (points ^2) + 0.000368721 * points + 0.847565905', points);
                 break;
             case 5:
-                ES = calculate('-0.000000007 * (points ^ 3) + -0.000000447 * (points ^ 2) + -0.000185244 * points + 0.976988247', points);
+                ES = calculate('7e-09 * (points ^3) + -7.737e-06 * (points ^2) + 0.000366872 * points + 0.85818903', points);
                 break;
             case 4:
-                ES = calculate('-0.000000008 * (points ^ 3) + 0.00000049 * (points ^ 2) + -0.000252302 * points + 0.983492271', points);
+                ES = calculate('5e-09 * (points ^3) + -6.429e-06 * (points ^2) + 0.0002887 * points + 0.878233448', points);
                 console.log("1", ES);
                 break;
             case 3:
-                ES = calculate('-0.000000008 * (points ^ 3) + 0.00000143 * (points ^ 2) + -0.000349111 * points + 0.993556078', points);
+                ES = calculate('2e-09 * (points ^3) + -4.555e-06 * (points ^2) + 0.000151816 * points + 0.904133938', points);
                 break;
             case 2:
-                ES = calculate('-0.000000007 * (points ^ 3) + 0.000001481 * (points ^ 2) + -0.000272939 * points + 0.994564172', points);
+                ES = calculate('-2e-09 * (points ^3) + -2.02e-06 * (points ^2) + -8.016e-05 * points + 0.941738418', points);
                 break;
             case 1:
-                ES = calculate('-0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809', points);
+                ES = calculate('-4e-09 * (points ^3) + 4.12e-07 * (points ^2) + -0.00027323 * points + 0.984596011', points);
                 console.log("1", ES);
                 break;
             default:
@@ -286,19 +295,19 @@
                 AS = 1;
                 break;
             case 1:
-                AS = calculate('-0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809', points);
+                AS = calculate('-4e-09 * (points ^3) + 4.12e-07 * (points ^2) + -0.00027323 * points + 0.984596011', points);
                 break;
             case 2:
-                AS = calculate('-0.000000007 * (points ^ 3) + 0.000001481 * (points ^ 2) + -0.000272939 * points + 0.994564172', points);
+                AS = calculate('-2e-09 * (points ^3) + -2.02e-06 * (points ^2) + -8.016e-05 * points + 0.941738418', points);
                 break;
             case 3:
-                AS = calculate('-0.000000008 * (points ^ 3) + 0.00000143 * (points ^ 2) + -0.000349111 * points + 0.993556078', points);
+                AS = calculate('2e-09 * (points ^3) + -4.555e-06 * (points ^2) + 0.000151816 * points + 0.904133938', points);
                 break;
             case 4:
-                AS = calculate('-0.000000008 * (points ^ 3) + 0.00000049 * (points ^ 2) + -0.000252302 * points + 0.983492271', points);
+                AS = calculate('5e-09 * (points ^3) + -6.429e-06 * (points ^2) + 0.0002887 * points + 0.878233448', points);
                 break;
             case 5:
-                AS = calculate('-0.000000007 * (points ^ 3) + -0.000000447 * (points ^ 2) + -0.000185244 * points + 0.976988247', points);
+                AS = calculate('7e-09 * (points ^3) + -7.737e-06 * (points ^2) + 0.000366872 * points + 0.85818903', points);
                 break;
             default:
                 break;

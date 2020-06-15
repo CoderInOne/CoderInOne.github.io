@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="utf-8"/>
-    <title>I期</title>
+    <title>I stage</title>
     <script src="script/jquery-3.5.1.min.js"></script>
     <script src="script/math.min.js"></script>
 </head>
@@ -11,22 +11,22 @@
 <form id="form" autocomplete="off" onsubmit="return false">
     <!--性别-->
     <div>
-        1. 请选择性别
+        1. sex
     </div>
 
     <p></p>
 
     <fieldset>
         <input type="radio" name="sex" id="man" value="26.54548" checked>
-        <label for="man">男</label>
+        <label for="man">male</label>
         <input type="radio" name="sex" id="women" value="0">
-        <label for="women">女</label>
+        <label for="women">female</label>
     </fieldset>
     <p></p>
 
     <!--年龄-->
     <div>
-        2. 请选择年龄
+        2. age (years)
     </div>
 
     <p></p>
@@ -44,24 +44,24 @@
 
     <!--组织学-->
     <div>
-        3. 请选择组织学
+        3. histologic type
     </div>
 
     <p></p>
     <fieldset>
         <input type="radio" name="zz" id="z1" value="26.33914" checked>
-        <label for="z1">腺癌</label>
+        <label for="z1">adenocarcinoma</label>
         <input type="radio" name="zz" id="z2" value="0">
-        <label for="z2">原位腺癌或微浸润腺癌</label>
+        <label for="z2">carcinoma in situ or microinvasive adenocarcinoma</label>
         <input type="radio" name="zz" id="z3" value="27.33178">
-        <label for="z3">鳞癌</label>
+        <label for="z3">squamous cell carcinoma</label>
         <input type="radio" name="zz" id="z4" value="33.2276">
-        <label for="z3">其他</label>
+        <label for="z3">other</label>
     </fieldset>
 
     <!--组织学-->
     <div>
-        4. 请选择分级
+        4. grade
     </div>
 
     <p></p>
@@ -76,7 +76,7 @@
 
     <!--淋巴结采样数目-->
     <div>
-        5. 请选择淋巴结采样数目
+        5. number of examined lymph nodes
     </div>
 
     <p></p>
@@ -88,7 +88,7 @@
     </fieldset>
 
     <div>
-        6. TNM分期
+        6. TNM stage
     </div>
 
     <p></p>
@@ -105,25 +105,25 @@
 
     <!--治疗方案-->
     <div>
-        7. 治疗方案
+        7. treatment strategy
     </div>
 
     <p></p>
     <fieldset>
         <input type="radio" name="zl" id="zl1" value="0" checked>
-        <label for="zl1">肺叶切除术</label>
+        <label for="zl1">lobectomy</label>
         <input type="radio" name="zl" id="zl2" value="38.54706">
-        <label for="zl2">肺段切除术</label>
+        <label for="zl2">segmentecomy</label>
         <input type="radio" name="zl" id="zl3" value="50.13435">
-        <label for="zl3">楔形切除术</label>
+        <label for="zl3">wedge resection</label>
         <input type="radio" name="zl" id="zl4" value="59.38025">
-        <label for="zl4">手术+放疗和/或化疗</label>
+        <label for="zl4">surgery + adjuvant therapy</label>
     </fieldset>
     <p></p>
 
     <!--8.已经存活的时间x年-->
     <div>
-        8. 已经存活的时间x年
+        8. patient has survived x years
     </div>
 
     <p></p>
@@ -165,7 +165,7 @@
 
     <!--9.期望的额外存活时间y年-->
     <div>
-        9.期望的额外存活时间y年
+        9.  patient expects to survive for another y years
     </div>
 
     <p></p>
@@ -195,7 +195,7 @@
 <p></p>
 
 <div>
-    <p>生存率：</p>
+    <p>y-year conditional survival given that the patient has survived x years: </p>
     <label id="result"></label>
 </div>
 
@@ -269,7 +269,6 @@
                 break;
             case 1:
                 ES = calculate('-0.000000005 * (points ^ 3) + 0.000001903 * (points ^ 2) + -0.000371789 * points + 1.012431809', points);
-                console.log("1", ES);
                 break;
             default:
                 break;
