@@ -35,22 +35,22 @@
     </div>
 </header>
 
-<h1>非小细胞肺癌条件生存率预测模型</h1>
+<h1>Web-based nomograms to predict the individual conditional
+    disease-specific survival in resected non-small cell lung cancer</h1>
 
 <main id="main">
     <section id="model">
-
         <form id="form">
             <fieldset>
                 <div>
                     <input type="radio" id="I" name="level" value="I"
                            checked>
-                    <label for="I">I期</label>
+                    <label for="I">I stage</label>
                 </div>
 
                 <div>
                     <input type="radio" id="II" name="level" value="II">
-                    <label for="II">IIA-IIIA期</label>
+                    <label for="II">IIA-IIIA stage</label>
                 </div>
             </fieldset>
 
@@ -62,7 +62,7 @@
 
             <div class="form-group row" id="submit">
                 <div class="col-sm-10">
-                    <input type="submit" name="Submit" value="确定" class="submit_button" id="calc_pred_button">
+                    <input type="submit" name="Submit" value="Submit" class="submit_button" id="calc_pred_button">
                 </div>
             </div>
         </form>
@@ -76,9 +76,9 @@
         var selected = data[0];
         console.log(selected);
         if (selected['value'] === 'I') {
-            window.location.href = './I.html';
+            window.location.href = './I-en.html';
         } else {
-            window.location.href = './II.html';
+            window.location.href = './II-en.html';
         }
     })
 </script>
