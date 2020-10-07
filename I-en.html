@@ -330,10 +330,10 @@
         }
 
         // 生存率CS
-        var CS = ES / AS;
+        var CS = ES * 100 / AS;
         console.log("CS=" + CS);
 
-        $("#result").text(CS);
+        $("#result").text(CS.toFixed(1) + '%');
     })
 </script>
 </body>

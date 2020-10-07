@@ -39,7 +39,7 @@
     <p></p>
 
     <fieldset>
-        <input type="radio" name="sex" id="man" value="28.123" checked>
+        <input type="radio" name="sex" id="man" value="28.12598" checked>
         <label for="man">male</label>
         <input type="radio" name="sex" id="women" value="0">
         <label for="women">female</label>
@@ -56,9 +56,9 @@
     <fieldset>
         <input type="radio" name="age" id="1" value="0" checked>
         <label for="1"><60</label>
-        <input type="radio" name="age" id="2" value="42.31306">
+        <input type="radio" name="age" id="2" value="42.3163">
         <label for="2">60-69</label>
-        <input type="radio" name="age" id="3" value="65.39539">
+        <input type="radio" name="age" id="3" value="65.41746">
         <label for="3">>=70</label>
     </fieldset>
     <p></p>
@@ -71,11 +71,11 @@
 
     <p></p>
     <fieldset>
-        <input type="radio" name="zz" id="z1" value="26.25465" checked>
+        <input type="radio" name="zz" id="z1" value="26.2555" checked>
         <label for="z1">adenocarcinoma</label>
         <input type="radio" name="zz" id="z2" value="0">
         <label for="z2">squamous cell carcinoma</label>
-        <input type="radio" name="zz" id="z3" value="40.86235">
+        <input type="radio" name="zz" id="z3" value="40.85534">
         <label for="z3">other</label>
     </fieldset>
 
@@ -88,9 +88,9 @@
     <fieldset>
         <input type="radio" name="level" id="l1" value="0" checked>
         <label for="l1">I</label>
-        <input type="radio" name="level" id="l2" value="45.30135">
+        <input type="radio" name="level" id="l2" value="45.2995">
         <label for="l2">II</label>
-        <input type="radio" name="level" id="l3" value="68.51703">
+        <input type="radio" name="level" id="l3" value="68.53008">
         <label for="l3">III-IV</label>
     </fieldset>
 
@@ -101,11 +101,11 @@
 
     <p></p>
     <fieldset>
-        <input type="radio" name="site" id="site1" value="8.800911" checked>
+        <input type="radio" name="site" id="site1" value="8.823165" checked>
         <label for="site1">upper lobe</label>
         <input type="radio" name="site" id="site2" value="0">
         <label for="site2">middle lobe</label>
-        <input type="radio" name="site" id="site3" value="36.079607">
+        <input type="radio" name="site" id="site3" value="36.107184">
         <label for="l3">lower lobe</label>
     </fieldset>
 
@@ -116,7 +116,7 @@
 
     <p></p>
     <fieldset>
-        <input type="radio" name="lb" id="lb1" value="25.11325" checked>
+        <input type="radio" name="lb" id="lb1" value="25.10972" checked>
         <label for="lb1"><16</label>
         <input type="radio" name="lb" id="lb2" value="0">
         <label for="lb2">>=16</label>
@@ -130,7 +130,7 @@
     <fieldset>
         <input type="radio" name="TNM" id="TNM1" value="0" checked>
         <label for="TNM1">IIA</label>
-        <input type="radio" name="TNM" id="TNM2" value="55.82092">
+        <input type="radio" name="TNM" id="TNM2" value="55.80679">
         <label for="TNM2">IIB</label>
         <input type="radio" name="TNM" id="TNM3" value="100">
         <label for="TNM3">IIIA</label>
@@ -145,9 +145,7 @@
     <fieldset>
         <input type="radio" name="zl" id="zl1" value="0" checked>
         <label for="zl1">lobectomy+chemotherapy</label>
-        <input type="radio" name="zl" id="zl2" value="50.17425">
-        <label for="zl2">sublobar resection+chemotherapy</label>
-        <input type="radio" name="zl" id="zl3" value="51.46833">
+        <input type="radio" name="zl" id="zl3" value="51.44187">
         <label for="zl3">other</label>
     </fieldset>
     <p></p>
@@ -271,35 +269,35 @@
         var ES = 0;
         switch (z) {
             case 10:
-                ES = calculate('1.2e-08 * (points ^3) + -9.919e-06 * (points ^2) + 0.000315701 * points + 0.822230384', points);
+                ES = calculate('1.2e-08 * points ^ 3 + -9.915e-06 * points ^ 2 + 0.000315349 * points + 0.822235095', points);
                 break;
             case 9:
-                ES = calculate('1.1e-08 * (points ^3) + -9.496e-06 * (points ^2) + 0.000293242 * points + 0.830306067', points);
+                ES = calculate('1.1e-08 * points ^ 3 + -9.492e-06 * points ^ 2 + 0.000292917 * points + 0.830310296', points);
                 break;
             case 8:
-                ES = calculate('1.1e-08 * (points ^3) + -9.486e-06 * (points ^2) + 0.000376139 * points + 0.830403902', points);
+                ES = calculate('1.1e-08 * points ^3 + -9.482e-06 * points ^2 + 0.000375807 * points + 0.83040918', points);
                 break;
             case 7:
-                ES = calculate('1e-08 * (points ^3) + -9.084e-06 * (points ^2) + 0.000380323 * points + 0.838055915', points);
+                ES = calculate('1e-08 * points ^3 + -9.08e-06 * points ^2 + 0.000380008 * points + 0.838061119', points);
                 break;
             case 6:
-                ES = calculate('9e-09 * (points ^3) + -8.486e-06 * (points ^2) + 0.000368721 * points + 0.847565905', points);
+                ES = calculate('9e-09 * points ^3 + -8.482e-06 * points ^2 + 0.000368428 * points + 0.847570874', points);
                 break;
             case 5:
-                ES = calculate('7e-09 * (points ^3) + -7.737e-06 * (points ^2) + 0.000366872 * points + 0.85818903', points);
+                ES = calculate('7e-09 * points ^3 + -7.734e-06 * points ^2 + 0.000366603 * points + 0.858193891', points);
                 break;
             case 4:
-                ES = calculate('5e-09 * (points ^3) + -6.429e-06 * (points ^2) + 0.0002887 * points + 0.878233448', points);
+                ES = calculate('5e-09 * points ^3 + -6.427e-06 * points ^2 + 0.000288484 * points + 0.878237158', points);
                 console.log("1", ES);
                 break;
             case 3:
-                ES = calculate('2e-09 * (points ^3) + -4.555e-06 * (points ^2) + 0.000151816 * points + 0.904133938', points);
+                ES = calculate('2e-09 * points ^3 + -4.553e-06 * points ^2 + 0.000151677 * points + 0.904135814', points);
                 break;
             case 2:
-                ES = calculate('-2e-09 * (points ^3) + -2.02e-06 * (points ^2) + -8.016e-05 * points + 0.941738418', points);
+                ES = calculate('-2e-09 * points ^3 + -2.019e-06 * points ^2 + -8.0196e-05 * points + 0.941737405', points);
                 break;
             case 1:
-                ES = calculate('-4e-09 * (points ^3) + 4.12e-07 * (points ^2) + -0.00027323 * points + 0.984596011', points);
+                ES = calculate('-4e-09 * points ^3 + 4.11e-07 * points ^2 + -0.000273171 * points + 0.984592428', points);
                 console.log("1", ES);
                 break;
             default:
@@ -317,19 +315,19 @@
                 AS = 1;
                 break;
             case 1:
-                AS = calculate('-4e-09 * (points ^3) + 4.12e-07 * (points ^2) + -0.00027323 * points + 0.984596011', points);
+                AS = calculate('-4e-09 * points ^3 + 4.11e-07 * points ^2 + -0.000273171 * points + 0.984592428', points);
                 break;
             case 2:
-                AS = calculate('-2e-09 * (points ^3) + -2.02e-06 * (points ^2) + -8.016e-05 * points + 0.941738418', points);
+                AS = calculate('-2e-09 * points ^3 + -2.019e-06 * points ^2 + -8.0196e-05 * points + 0.941737405', points);
                 break;
             case 3:
-                AS = calculate('2e-09 * (points ^3) + -4.555e-06 * (points ^2) + 0.000151816 * points + 0.904133938', points);
+                AS = calculate('2e-09 * points ^3 + -4.553e-06 * points ^2 + 0.000151677 * points + 0.904135814', points);
                 break;
             case 4:
-                AS = calculate('5e-09 * (points ^3) + -6.429e-06 * (points ^2) + 0.0002887 * points + 0.878233448', points);
+                AS = calculate('5e-09 * points ^3 + -6.427e-06 * points ^2 + 0.000288484 * points + 0.878237158', points);
                 break;
             case 5:
-                AS = calculate('7e-09 * (points ^3) + -7.737e-06 * (points ^2) + 0.000366872 * points + 0.85818903', points);
+                AS = calculate('7e-09 * points ^3 + -7.734e-06 * points ^2 + 0.000366603 * points + 0.858193891', points);
                 break;
             default:
                 break;
@@ -340,10 +338,10 @@
         }
 
         // 生存率CS
-        var CS = ES / AS;
+        var CS = ES * 100 / AS;
         console.log("CS=" + CS);
 
-        $("#result").text(CS);
+        $("#result").text(CS.toFixed(1) + '%');
     })
 </script>
 </body>
